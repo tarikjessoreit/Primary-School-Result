@@ -1,5 +1,3 @@
-
-// active datatable
-$(document).ready(function() {
-    $('#studentList-table').DataTable();
-} );
+$(document).ready(function () {
+  $("#example").DataTable();
+});
