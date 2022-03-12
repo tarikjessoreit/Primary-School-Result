@@ -1,6 +1,6 @@
 <div class="container-fluid m-0 p-0">
-    <footer class="text-center p-3 bg-secondary">
-        <h2>&copy;2022 By Dev-09</h2>
+    <footer class="text-center p-3 bg-dark">
+        <div class="text-light">&copy;2022 By Dev-09</div>
     </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

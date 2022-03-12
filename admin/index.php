@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 
-<body>
+<body id="login">
     <div class="container-fluid p-0 mx-0 mb-3">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
             <div class="container-fluid">
@@ -20,7 +20,8 @@
         </nav>
     </div>
     <div class="container mt-3 main">
-        <div class="row login p-5 bg-secondary">
+        <div class="row login p-5">
+        <h3 class="text-light text-center mb-3">Login Please</h3>
             <div class="col-md-12">
                 <form action="dashboard.php" method="post">
                     <div class="mb-3">
