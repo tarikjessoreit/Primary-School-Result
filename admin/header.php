@@ -1,3 +1,9 @@
+<?php include "../include/config.php"; ?>
+<?php 
+    if (empty($_SESSION['log_status'])) {
+        header('location:index.php');
+    }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +37,7 @@
                             <a class="nav-link active" href="student-list.php">Student List</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="add-result.php">Add Result</a>
+                            <a class="nav-link active" href="result-add.php">Add Result</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="result-list.php">Result List</a>
@@ -41,7 +47,19 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-danger" type="submit">Search</button>
                     </form>
-                    <a class="btn btn-outline-light mx-2" href="index.php">Logout</a>
+                    
+                    <!-- dropdown -->
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle ms-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/admin-default.jpg" alt="" style="height: 30px;width: 30px; border-radius: 50%;">
+                        <?php echo $_SESSION['username']; ?>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="settings.php">Settings</a></li>
+                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                      </ul>
+                    </div><!--dropdown-->
                 </div>
             </div>
         </nav>

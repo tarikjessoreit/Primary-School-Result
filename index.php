@@ -6,10 +6,10 @@
                 <h1>Enter Your Information For Search Result</h1>
             </div>
             <div class="card-body col-md-12">
-                <form action="show-result.php" method="" class="row">
+                <form action="show-result.php" method="post" class="row">
                     <div class="form-group p-3 col-md-3">
                         <label for="selectyear" class="">Select Year</label>
-                        <select class="form-control" id="selectyear">
+                        <select class="form-control" id="selectyear" name="year">
                             <option>Select Year</option>
                             <option>2022</option>
                             <option>2023</option>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="form-group p-3 mt-0 col-md-3">
                         <label for="selectclass" class="">Select Class</label>
-                        <select class="form-control" id="selectclass">
+                        <select class="form-control" id="selectclass" name="class">
                             <option>Select Class</option>
                             <option>1</option>
                             <option>2</option>
@@ -36,7 +36,7 @@
 
                     <div class="form-group p-3 col-md-3">
                         <label for="inputroll">Enter Roll</label>
-                        <input type="number" class="form-control " id="inputroll" placeholder="Enter Roll No">
+                        <input type="number" class="form-control " id="inputroll" placeholder="Enter Roll No" name="roll">
                     </div>
 
                     <div class="form-group p-3 col-md-3 d-flex align-items-center">
